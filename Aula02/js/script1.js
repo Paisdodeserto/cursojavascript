@@ -1,22 +1,27 @@
 function corFundo() {
   var cor = document.getElementById("txtCor").value;
   cor = cor.toLowerCase(); //COLOCA TODAS AS LETRAS EM MINÚSCULA
+  var vcor = ""; 
+  
 
   if (cor == "red") {
-    document.body.style.backgroundColor = "#FF0000";
+    vcor = "#FF0000";
   } 
   else if (cor == "black") {
-    document.body.style.backgroundColor = "#000000";
+    vcor = "#000000";
   } 
   else if (cor == "green") {
-    document.body.style.backgroundColor = "#00FF00";
+    vcor = "#00FF00";
   } 
   else {
-    document.body.style.backgroundColor = "#FFFFFF";
+     vcor = "#FFFFFF";
     alert("A cor não existe na paleta!!");
   }
+  document.body.style.backgroundColor = vcor; //recebendo a cor de fundo digitada pelo usuário, guarda na variável vcor e aplica na página
 }
 
+// DRY - Don't repeat yourself (Não seja repetitivo)
+// REFATORAR - escrever o código para melhorar a performance
 
 function textoClaro(){
     document.getElementsByTagName("h1")[0].style.color = "white";
