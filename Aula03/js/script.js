@@ -25,9 +25,9 @@ Classe é um conjunto de funções
 */
   const tempo = new Date();
   var datacompleta = tempo.toLocaleDateString();
-  var diames = tempo.getDate();
-  var diasemana = tempo.getDay();
-  var mes = tempo.getMonth();
+  var diames = tempo.getDate(); //traz o dia do mês
+  var diasemana = tempo.getDay(); //traz o dia da semana indexado de 0 a 6
+  var mes = tempo.getMonth(); //traz o mês indexado de 1 a 11
   var hora = tempo.getHours();
   var minutos = tempo.getMinutes();
   var segundos = tempo.getSeconds();
