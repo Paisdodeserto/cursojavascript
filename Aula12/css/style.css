@@ -8,7 +8,7 @@ html{
     box-sizing: border-box;
 }
 
-nav{
+.nav{
     background-color: rgb(0, 0, 0);
     padding: 50px 10px 0px 20px;
     height: 100vh;
@@ -19,24 +19,24 @@ nav{
     transition: ease 0.5s;
 }
 
-nav ul{
+.nav ul{
     list-style: none;    
 }
 
-nav ul li{
+.nav ul li{
     /* border: 1px solid red; */
     margin-bottom: 10px;
     padding: 5px;
 }
 
-nav ul li a{
+.nav ul li a{
     font-family: "arial";
     font-size: 15pt;
     color: white;
     text-decoration: none;
 }
 
-nav ul li:hover{
+.nav ul li:hover{
     background-color: rgb(200, 200, 200, 0.3);
     cursor: pointer;
 }
@@ -114,4 +114,90 @@ section{
     color: white;
     margin-left: 100px;
     cursor: pointer;
+}
+
+#paginacao {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(71, 13, 13);
+    /*para fixar o rodapé*/
+    /* position: fixed;
+    bottom: 0px;
+    left: 0px; */
+    width: 100vw;
+}
+
+.pag {
+    text-align: center;
+    padding: 20px;    
+}
+
+.pag ul{
+    list-style-type: none;    
+}
+
+.pag li{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;    
+}
+
+.pag li a{
+    font-family: "verdana";
+    font-size: 12pt;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: ease 0.5s;
+    padding: 10px;
+}
+
+.pag li a:hover{
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transform: scale(1.1);
+    background-color: black;
+}
+
+#fundo{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba( 0, 0, 0, 0.8);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 11000;
+    opacity: 0;
+    display: none;
+}
+
+#exibir{
+    background-color: white;
+    width: 50vw;
+    height: 40vh;
+    margin: 10% auto;
+    border-radius: 10px;
+    margin-top: -400px;
+    transition: ease 1s;
+    text-align: center;
+
+}
+
+#fechar{
+    position: relative;
+    left: 385px;
+    top: 10px;	
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    padding: 10px;            
+}
+
+#exibirImagem img{
+    width: 50vw;
+    height: 40vh;
+    
 }
